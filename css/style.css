@@ -6,8 +6,146 @@
 
 /* //////////HEADER////////// */
 
+/* STRUCTURE */
+#header_section{
+    width: 100vw;
+}
+
+.big_nav{
+    display: none;
+}
+
+#nav_logo, .big_nav{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.header_features_slot{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.card:nth-child(1) p{
+    text-align: left;
+}
+
+
+/* STYLE */
+.nav_background_color{
+    background-color: var(--first_color);
+}
+
+.small_nav i{
+    color: white;
+}
+
+.card{
+    background-color: var(--first_color_gradient_2);
+}
+
+.header_features_slot .card:nth-child(1) {
+    padding-bottom: 0;
+}
+
+.header_features_slot .card_img , .card_img *{
+    padding: 0;
+}
+
+.card_logo{
+    padding: 5px;
+}
+
+.card_logo i{
+    font-size: 7em;
+    line-height: 1em;
+    color: var(--first_color);
+}
+
+.card h2{
+    color: var(--first_color);
+}
 
 /* //////////MAIN////////// */
 
 
 /* //////////FOOTER////////// */
+
+
+
+
+/* //////////RESPONSIVE////////// */
+
+/* Tablet -> da 768px in poi */
+@media screen  and (min-width: 768px){
+
+    /* COMUN */
+    .negative_margin_container {
+        margin-inline: -20px;
+    }
+
+    .row_layout{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card:nth-child(1){
+        width: calc(((100% / 3) * 2 - 40px) );
+    }
+
+    .card{
+        width: calc((100% / 3) - 40px);
+        margin-inline: 20px;
+    }
+
+    /* HEADER */
+
+     header .card:nth-child(1){
+        text-align: left;
+    }
+
+     header .card_img{
+        width: 50%;
+    }
+}
+
+/* Desktop -> da 992px in poi */
+@media screen  and (min-width: 992px){
+
+    /* COMUN */
+    .width_container{
+        width: 65%;
+    }
+
+    .card:nth-child(1){
+        display: flex;
+    }
+
+    /* HEADER */
+    .small_nav {
+        display: none;
+    }
+
+    .big_nav{
+        display: inline-block;
+    }
+
+    .big_nav *{
+        display: inline-block;
+        padding-inline: 5px;
+    }
+
+     header .card:nth-child(1) .card_info{
+        width: 50%;
+    }
+
+     header .card_img{
+        align-self: flex-end;
+    }
+
+    /* HEADER_STYLE */
+    .big_nav a{
+        color: white;
+        text-decoration: none;
+        font-size: 13px;
+    }
+}

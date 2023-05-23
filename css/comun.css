@@ -1,0 +1,36 @@
+/* CONTAINERS */
+
+.width_container{
+    margin: auto;
+    width: 90%;
+}
+
+.nav_layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* CARDS */
+.card{
+    width: 100%;
+    padding:15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.card *{
+     padding-top: 10px;
+     padding-bottom: 10px;
+}
+
+.card_img > img{
+    width: 100%;
+    display: block;
+}
+
+/* FONTS */
+*{
+  font-family: 'Open Sans', sans-serif;
+}
