@@ -1,8 +1,8 @@
+
+/* CSS FILES */
 @import url(reset.css);
 @import url(comun.css);
 @import url(colors.css);
-
-
 
 /* //////////HEADER////////// */
 
@@ -11,20 +11,38 @@
     width: 100vw;
 }
 
+.nav_layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .big_nav{
     display: none;
 }
 
 #nav_logo, .big_nav{
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: .9375rem;
+    padding-bottom: .9375rem
 }
 
-.card:nth-child(1) p{
+.features_card{
+    width: 100%;
+    padding:.9375rem;
+    margin-bottom: .9375rem;
+    text-align: center;
+}
+
+.features_card *{
+     padding-top: .625rem;
+     padding-bottom: .625rem;
+}
+
+.features_card:nth-child(1) p{
     text-align: left;
 }
 
-.header_features_slot .card:nth-child(1) {
+.header_features_slot .features_card:nth-child(1) {
     padding-bottom: 0;
 }
 
@@ -32,8 +50,13 @@
     padding: 0;
 }
 
+.card_img > img{
+    width: 100%;
+    display: block;
+}
+
 .card_logo{
-    padding: 5px;
+    padding: .3125rem;
 }
 
 /* STYLE */
@@ -41,12 +64,37 @@
     background-color: var(--first_color);
 }
 
+.big_nav .medium_button {
+    background-color: white;
+    line-height: 1.0625rem;
+}
+
+.big_nav .medium_button a{
+    color: var(--first_color);
+}
+
 .small_nav i{
     color: white;
 }
 
-.card{
+.features_card{
     background-color: var(--first_color_gradient_2);
+}
+
+.features_card {
+    border-radius: 1.5625rem
+}
+
+.features_card_info .medium_button{
+    background-color: var(--first_color);
+}
+
+.features_card_info .medium_button *{
+    color: white;
+}
+
+header p {
+    font-weight:900;
 }
 
 header .card_logo i{
@@ -55,103 +103,268 @@ header .card_logo i{
     color: var(--first_color);
 }
 
- header .card h2{
+header .features_card h2{
     color: var(--first_color);
 }
-
 
 /* //////////MAIN////////// */
 
 /* STRUCTURE */
-.equal_cards_info{
-    padding-bottom: 15px;
-    padding-top: 15px;
+
+.strategic_planning_card_info{
+    padding-bottom: .9375rem;
+    padding-top: .9375rem;
 }
 
-.equal_cards{
-    padding: 15px;
+.development_card_text{
+    text-align: center;
 }
 
-.equal_cards_img img{
+.development_card{
+    padding: .9375rem;
+}
+
+.strategic_planning_card_img img , .development_card_img img{
     width: 100%;
-}
-
-.expert_card{
-    width: 100%;
-    padding:15px;
-    margin-bottom: 15px;
 }
 
 .expert_info{
     text-align: center;
 }
 
+.expert_card{
+    width: 100%;
+    padding:.9375rem;
+    margin-bottom: .9375rem;
+}
+
+.expert_card_info{
+    text-align: center;
+}
+
+.expert_card_info p i {
+    line-height: .875rem;
+    vertical-align: text-top;
+}
+    
+.expert_card_img  {
+     width:12.5rem;
+     height:12.5rem;
+     margin: auto;
+}
+
 .expert_card_img > img {
     width: 100%;
+    height: 100%; 
+    object-fit: cover;
 }
 
 .with_us_title{
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: .9375rem;
+    padding-bottom: .9375rem;
     text-align: center;
 }
 
 .with_us_card{
     width: 100%;
-    padding:15px;
-    margin-bottom: 15px;
+    padding:.9375rem;
+    margin-bottom: .9375rem;
 }
 
-.about_us_article{
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
-.about_us_card_info{
-    padding-top: 15px;
-    padding-bottom: 15px;
+.about_us_card_img{
+    width:12.5rem;
+    height:12.5rem;
+    position: relative;
 }
 
 .about_us_card_img img {
-    width: 60%;
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+}
+
+.about_us_card_img i{
+    position: absolute;
+    top: 1.25rem;
+    right: 0;
+    font-size: 4em;
+    color: var(--second_color);
+}
+
+.about_us_article{
+    padding-top: .9375rem;
+    padding-bottom: .9375rem;
+}
+
+.about_us_card{
+    padding-top: .9375rem;
+    padding-bottom: .9375rem;
 }
 
 .get_started_card{
-    padding: 50px;
+    padding: 3.125rem;
     text-align: center;
 }
 
+.get_started_card span{
+    display: block;
+}
+
+.get_started_card span i {
+    line-height: 1.375rem;
+    vertical-align: middle;
+}
+
 /* STYLE */
+
 .main_background_color{
     background-color: var(--second_color);
 }
 
-.equal_cards{
+.strategic_planning_card_info{
+    color: white;
+}
+
+.development_card{
     background-color: white;
-    border-radius: 25px;
+    border-radius: 1.5625rem;
+}
+
+ .development_card .circular_button{
+    background-color: var(--second_color);
+}
+
+.expert_card_img  > img{
+    border-radius: 100%;
+}
+
+.expert_info h2 {
+    color: var(--second_color);
+}
+
+.expert_card_info{
+    color: white;
+}
+
+.expert_info h4 {
+    font-weight: 200;
+    font-size: .875rem;
+}
+
+.expert_info p, .equal_cards_text p {
+    color: var(--p_color_grey);
 }
 
 .expert_card{
     background-color:var(--second_color);
-    border-radius: 25px;
+    border-radius: 1.5625rem;
+}
+
+.with_us_title{
+    color: white;
 }
 
 .with_us_card{
     background-color: white;
-    border-radius: 25px;
+    border-radius: 1.5625rem;
+}
+
+.with_us_card .medium_button {
+    background-color: var(--second_color);
+}
+
+.with_us_card .medium_button a{
+    color: white;
+
+}
+
+.with_us_card h2 , .with_us_card h4{
+    color: var(--second_color);
+}
+
+.about_us_card .medium_button {
+    background-color:var(--second_color);
+}
+
+.about_us_card_img i{
+    font-size: 4em;
+    color: var(--second_color);
+}
+
+.about_us_card_img img {
+    border-radius: 100%;
+}
+
+.about_us_card .medium_button i , .about_us_card .medium_button a{
+    color: white;
+}
+
+.about_us_card p{
+    font-weight: 600;
+    line-height:  2.5rem;;
+}
+
+.about_us_article h2{
+    color: var(--second_color);
+}
+
+.about_us_card p {
+    color: var(--second_color);
+    font-weight: 700;
+}
+
+.get_started_card {
+    color: white;
+}
+
+.get_started_card .big_button {
+    background-color: white;
+}
+
+.get_started_card .big_button a {
+    color: var(--second_color);
+}
+
+.get_started_card h5 {
+    color:rgba(255, 255, 255, 0.475);
+    font-weight: 300;
+}
+   
+.get_started_card h2 {
+    color:  var( --fourth_color);
+}
+
+.get_started_card span a {
+    color: white;
+}
+
+.get_started_card span i {
+    font-size: .3125rem;
 }
 
 /* //////////FOOTER////////// */
 
 /* STRUCTURE */
 .footer_card {
-    padding: 50px;
+    padding: 3.125rem;
     text-align: center;
+}
+
+.footer_card p {
+    margin-bottom: 3.125rem;
 }
 
 /* STYLE */
 .footer_background_color{
     background-color: var(--third_color) ;
+}
+
+footer * {
+    color: white;
+}
+
+.footer_card  a {
+    color: var(--second_color) ;
 }
 
 /* //////////RESPONSIVE////////// */
@@ -161,7 +374,7 @@ header .card_logo i{
 
     /* COMUN */
     .negative_margin_container {
-        margin-inline: -20px;
+        margin-inline: -1.25rem;
     }
 
     .row_layout{
@@ -169,18 +382,18 @@ header .card_logo i{
         flex-wrap: wrap;
     }
 
-    .card:nth-child(1){
-        width: calc(((100% / 3) * 2 - 40px) );
+    .features_card:nth-child(1){
+        width: calc(((100% / 3) * 2 - 2.5rem) );
     }
 
-    .card{
-        width: calc((100% / 3) - 40px);
+    .features_card{
+        width: calc((100% / 3) - 2.5rem);
         margin-inline: 20px;
     }
 
     /* HEADER */
 
-     header .card:nth-child(1){
+     header .features_card:nth-child(1){
         text-align: left;
     }
 
@@ -190,42 +403,46 @@ header .card_logo i{
 
     /* MAIN */
     .expert_card_img{
-        width: calc(30% - 20px);
-        margin-right: 20px;
+        margin-right: 1.25rem;
     }
 
+    .expert_card_img {
+        flex-basis: 12.5rem;
+        margin-left: 0;
+    } 
+
     .expert_card_info{
-        width: calc(70% - 20px);
-        margin-left: 20px;
+        width: calc(100% - 15rem);
+        margin-left: 1.25rem;
         text-align: left;
+        align-self: center;
     }
     
     .with_us_card{
-        width: calc(50% - 40px);
+        width: calc(50% - 2.5rem);
         margin: 20px;
     }
 
-
     .about_us_article{
-        width: calc(60% - 20px);
-        margin-right: 20px;
+        width: calc(60% - 1.25rem);
+        margin-right: 1.25rem;
     }
 
-    .about_us_card_info{
-        width: calc(40% - 20px);
-        margin-left: 20px;
+    .about_us_card{
+        width: calc(40% - 1.25rem);
+        margin-left: 1.25rem;
     }
-
 
     .get_started_card{
-        padding: 100px;
-        }
+        padding: 6.25rem;
+    }
 
+    
     /* MAIN STYLE */
     
     /* FOOTER */
     .footer_card {
-        padding: 100px;
+        padding: 6.25rem;
     }
 }
 
@@ -237,7 +454,7 @@ header .card_logo i{
         width: 65%;
     }
 
-    .card:nth-child(1){
+    .features_card:nth-child(1){
         display: flex;
     }
 
@@ -252,10 +469,10 @@ header .card_logo i{
 
     .big_nav *{
         display: inline-block;
-        padding-inline: 5px;
+        padding-inline: .3125rem;
     }
 
-     header .card:nth-child(1) .card_info{
+     header .features_card:nth-child(1) .features_card_info{
         width: 50%;
     }
 
@@ -267,24 +484,23 @@ header .card_logo i{
     .big_nav a{
         color: white;
         text-decoration: none;
-        font-size: 13px;
+        font-size: .8125rem;
     }
 
     /* MAIN */
-    .equal_cards_info{
-        width:calc(50% - 20px);
-        margin-right: 20px;
+    .strategic_planning_card_info{
+        width:calc(50% - 1.25rem);
+        margin-right: 1.25rem;
     }
     
-    .equal_cards{
-        width:calc(50% - 20px);
-        margin-left: 20px;
+    .development_card{
+        width:calc(50% - 1.25rem);
+        margin-left: 1.25rem;
     }
     
     .with_us_card{
-        width: calc((100% / 3) - 40px);
-        margin: 20px;
+        width: calc((100% / 3) - 2.5rem);
+        margin: 1.25rem;
     }
-    
     
 }   

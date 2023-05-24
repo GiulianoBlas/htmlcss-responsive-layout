@@ -1,3 +1,73 @@
+
+/* DYSPLAY */
+img{
+    display: block;
+}
+
+/* FONTS */
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+  
+/* TEXT */
+p{
+    line-height: 1.875rem;
+    margin-bottom: .9375rem;
+    margin-top: .9375rem;
+}
+
+h2,h3,h4,h5,span{
+    margin-bottom: .9375rem;
+    margin-top: .9375rem;
+}
+
+.strategic_planning_card_info h2 {
+    font-size: 2.3em;
+}
+
+.expert_info h2 , .with_us_title h2 , .get_started_card h3 , .about_us_card p{
+    font-size: 1.7em;
+}
+
+.about_us_article h2 , .get_started_card h2, .with_us_card  h4{
+    font-size: 3em;
+}
+
+/* BUTTONS */
+.circular_button{
+    border-radius: 100%;
+    border-style: none;
+    width: 3.125rem;
+    height: 3.125rem;
+    vertical-align: middle;
+}
+
+.medium_button{
+    border-radius: 3.125rem;
+    border-style: none;
+    display: inline-block;
+    text-align: center;
+    padding-inline: .9375rem;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+}
+
+.big_button{
+    border-radius: 3.125rem;
+    border-style: none;
+    display: inline-block;
+    text-align: center;
+    padding-inline: 4.375rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+
+.medium_button * , .big_button * {
+    text-decoration: none;
+    font-size: 1.0625rem;
+    line-height: 1.0625rem;
+}
+
 /* CONTAINERS */
 
 .width_container{
@@ -5,42 +75,12 @@
     width: 90%;
 }
 
-.nav_layout {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .top_bottom_margin{
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
 }
 
-/* CARDS */
-.card{
-    width: 100%;
-    padding:15px;
-    margin-bottom: 15px;
-    text-align: center;
-}
-
-.card *{
-     padding-top: 10px;
-     padding-bottom: 10px;
-}
-
-.card_img > img{
-    width: 100%;
-    display: block;
-}
-
-/* CARD STYLE */
-
-.card {
-    border-radius: 25px
-}
-
-/* FONTS */
-*{
-  font-family: 'Open Sans', sans-serif;
+/* CARDS STYLE */
+header p , .with_us_card p{
+    color: var( --p_color_grey);
 }
