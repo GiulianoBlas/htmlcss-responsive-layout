@@ -11,6 +11,10 @@
     align-items: center;
 }
 
+.top_bottom_margin{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
 
 /* CARDS */
 .card{
@@ -28,6 +32,12 @@
 .card_img > img{
     width: 100%;
     display: block;
+}
+
+/* CARD STYLE */
+
+.card {
+    border-radius: 25px
 }
 
 /* FONTS */
